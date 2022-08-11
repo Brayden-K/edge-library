@@ -2,8 +2,6 @@ import time, random, string, os
 from colorama import Fore, Back, Style, init
 
 class color:
-	
-
 	def __init__(self):
 		init()
 		# Colors
@@ -29,7 +27,7 @@ class helper:
 	"""
 	General helper class
 		randomSleep: Sleeps for a random amount of seconds between your two inputs			|	randomSleep(first: int, second: int) -> int
-		randomString: Returns a random string the length of the inputs						|	randomString(a: str) -> str:
+		randomString: Returns a random string the length of the inputs						|	randomString(lenth: str) -> str:
 		randomBirthday: Returns a random birthday in dict form from 1980-2003 birth year.	|	randomBirthday() -> dict:
 		randomPassword: Generates a random													|	randomPassword(length:int, numbers:bool=False, symbols:bool=False, upper:bool=False) -> str:
 		openUrl: Opens the given URL														|	openUrl(url:str)
@@ -41,9 +39,9 @@ class helper:
 		number = random.randint(first, second)
 		time.sleep(number)
 	
-	def randomString(a:str) -> str:
+	def randomString(length:str) -> str:
 		letters = string.ascii_letters
-		result_str = "".join(random.choice(letters) for i in range(a))
+		result_str = "".join(random.choice(letters) for i in range(length))
 		return result_str
 	
 	def randomBirthday() -> dict:

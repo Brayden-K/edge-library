@@ -6,7 +6,7 @@ I created this library to help with projects as I was tired of re-coding several
 - randomSleep: Sleeps for a random amount of seconds between your two inputs
 `randomSleep(first: int, second: int) -> int`
 - randomString: Returns a random string the length of the inputs
-`randomString(a: str) -> str:`
+`randomString(length: str) -> str:`
 - randomBirthday: Returns a random birthday in dict form from 1980-2003 birth year
 `randomBirthday() -> dict:`
 - randomPassword: Generates a random
