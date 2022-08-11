@@ -26,14 +26,22 @@ class color:
 class helper:
 	"""
 	General helper class
-		randomSleep: Sleeps for a random amount of seconds between your two inputs			|	randomSleep(first: int, second: int) -> int
-		randomString: Returns a random string the length of the inputs						|	randomString(lenth: str) -> str:
-		randomBirthday: Returns a random birthday in dict form from 1980-2003 birth year.	|	randomBirthday() -> dict:
-		randomPassword: Generates a random													|	randomPassword(length:int, numbers:bool=False, symbols:bool=False, upper:bool=False) -> str:
-		openUrl: Opens the given URL														|	openUrl(url:str)
-		title: Sets console window title to the input										|	title(text:str):
-		resize: Resizes the window console with given inputs								|	resize(s1:int, s2:int):
-		clear: Clears the console															|	clear()
+		randomSleep: Sleeps for a random amount of seconds between your two inputs		
+			randomSleep(first: int, second: int) -> int
+		randomString: Returns a random string the length of the inputs					
+			randomString(lenth: str) -> str:
+		randomBirthday: Returns a random birthday in dict form from 1980-2003 birth year.
+			randomBirthday() -> dict:
+		randomPassword: Generates a random												
+			randomPassword(length:int, numbers:bool=False, symbols:bool=False, upper:bool=False) -> str:
+		openUrl: Opens the given URL													
+			openUrl(url:str)
+		title: Sets console window title to the input									
+			title(text:str):
+		resize: Resizes the window console with given inputs							
+			resize(s1:int, s2:int):
+		clear: Clears the console														
+			clear()
 	"""
 	def randomSleep(first:int, second:int) -> int:
 		number = random.randint(first, second)
